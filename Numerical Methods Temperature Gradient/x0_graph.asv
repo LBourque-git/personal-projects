@@ -1,0 +1,18 @@
+load('Temp_61x121.mat');
+length = 61;
+height = 121;
+dim_length = 1;
+dim
+
+x = zeros(height,1);
+
+for lv1 = 1 : height
+    if lv1 == 1
+        x(1,:) = Temp(1,:);
+    else
+        new_lv = lv1 + length;
+        x(lv1,:) = Temp(new_lv,:);
+    end
+end
+
+
